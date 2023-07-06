@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "bcf2a2e1-1b6c-4fb0-9c55-fef8e595944f",
+		"name": "Anubhav BTP Training",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET All Vendors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/vendor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Single Vendor Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/vendor/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendor",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST to create new vendor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"VENDX\",\r\n    \"companyName\": \"SAP Labs\",\r\n    \"contactPerson\": \"Prakash Kumar\",\r\n    \"firstName\": \"Ravikanth\",\r\n    \"lastName\": \"Mallipeddu\",\r\n    \"website\": \"www.sap.com\",\r\n    \"email\": \"ravi@sap.com\",\r\n    \"status\": \"A\",\r\n    \"regDate\": \"2022-11-06T02:53:11.380+00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/vendor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE single vendor data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"VENDX\",\r\n    \"companyName\": \"SAP Labs\",\r\n    \"contactPerson\": \"Prakash Kumar\",\r\n    \"firstName\": \"Lohitaksh\",\r\n    \"lastName\": \"Varshnaey\",\r\n    \"website\": \"www.sap.com\",\r\n    \"email\": \"lohith@sap.com\",\r\n    \"status\": \"A\",\r\n    \"regDate\": \"2022-11-06T02:53:11.380+00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/vendor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE vendor data using microservice",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"VENDX\",\r\n    \"companyName\": \"SAP Labs\",\r\n    \"contactPerson\": \"Prakash Kumar\",\r\n    \"firstName\": \"Lohitaksh\",\r\n    \"lastName\": \"Varshnaey\",\r\n    \"website\": \"www.sap.com\",\r\n    \"email\": \"lohith@sap.com\",\r\n    \"status\": \"A\",\r\n    \"regDate\": \"2022-11-06T02:53:11.380+00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/vendor/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vendor",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
